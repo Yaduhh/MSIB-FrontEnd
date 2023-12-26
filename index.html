@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detikfinance Business Plan Competition 2023</title>
+    <link rel="shortcut icon" href="public/favicon.ico" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" type="text/css" href="global.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="px-8 lg:px-14 py-5 bg-primary shadow md:flex md:items-center md:justify-between fixed w-full z-50"
+    >
+      <div class="flex justify-between items-center">
+        <a href="index.html" class="text-2xl cursor-pointer z-50">
+          <img class="h-10 inline" src="assets/images/logo.png" alt="logo" />
+        </a>
+
+        <span class="text-3xl cursor-pointer mx-2 md:hidden block text-white">
+          <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+        </span>
+      </div>
+
+      <ul
+        class="md:flex md:items-center lg:gap-8 text-white font-medium xl:text-lg -z-0 md:z-auto md:static absolute bg-primary w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-200px] transition-all ease-in duration-300"
+      >
+        <li class="mx-3 my-0 md:my-0">
+          <a
+            href="#about"
+            class="hover:text-accent duration-200 nav-link"
+            data-target="about"
+            >About</a
+          >
+        </li>
+        <li class="mx-3 my-3 md:my-0">
+          <a
+            href="#mechanism"
+            class="hover:text-accent duration-200 nav-link"
+            data-target="mechanism"
+            >Mechanism</a
+          >
+        </li>
+        <li class="mx-3 my-3 md:my-0">
+          <a
+            href="#latestupdate"
+            class="hover:text-accent duration-200 nav-link"
+            data-target="latestupdate"
+            >Latest Update</a
+          >
+        </li>
+        <button
+          class="bg-white text-primary duration-300 px-6 py-2 rounded-full hover:bg-secondary hover:text-white mx-3"
+        >
+          <a href="register/register.html"> Register </a>
+        </button>
+      </ul>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- HERO Cover -->
+    <section id="home">
+      <div
+        class="w-full relative -z-0 h-screen overflow-hidden flex justify-center items-center"
+      >
+        <img
+          src="assets/images/picturebg.png"
+          alt="Hero"
+          class="absolute 2xl:-top-28 w-full max-sm:hidden"
+        />
+        <img
+          src="assets/images/picturebgMobile.png"
+          alt="Hero"
+          class="absolute block md:hidden mt-10"
+        />
+        <img
+          src="assets/images/picturebgMD.png"
+          alt="Hero"
+          class="absolute md:block lg:hidden mt-10 max-sm:hidden"
+        />
+        <img
+          src="assets/images/bgaccent3.png"
+          alt="accent3"
+          class="absolute bottom-0 max-sm:hidden"
+        />
+        <img
+          src="assets/images/bgaccent2.png"
+          alt="accent2"
+          class="absolute bottom-0 max-sm:hidden"
+        />
+        <img
+          src="assets/images/bgaccent5.png"
+          alt="accent5"
+          class="absolute max-sm:hidden md:top-14 lg:-top-10 2xl:-top-12"
+        />
+        <img
+          src="assets/images/bgaccent4.png"
+          alt="accent5"
+          class="absolute top-0 mix-blend-multiply max-sm:hidden md:top-20 2xl:top-0"
+        />
+
+        <!-- text Home -->
+        <div
+          class="z-50 text-white font-medium 2xl:text-center md:text-start flex flex-col gap-4 2xl:mx-0 md:mx-10 max-sm:mx-10 max-sm:text-start max-sm:items-start md:items-start lg:items-center 2xl:items-center"
+        >
+          <p class="text-3xl max-sm:text-lg lg:text-3xl md:text-2xl">
+            Detikfinance Business Plan Competition 2023
+          </p>
+          <h1
+            class="text-6xl font-bold max-sm:text-4xl lg:txet-6xl md:text-5xl"
+          >
+            EMPOWERING INDONESIA STARTUP
+          </h1>
+          <p class="max-sm:text-xs max-sm:font-medium max-w-5xl text-lg">
+            Detikfinance memberikan ruang kepada para startup di Indonesia untuk
+            menunjukkan, serta mempromosikan brand mereka untuk mendapatkan
+            perhatian dari venture capital atau angel investor
+          </p>
+          <button class="flex max-sm:justify-start justify-center">
+            <a
+              class="bg-secondary hover:bg-primary px-5 py-3 rounded-lg hover:text-white duration-300"
+              href="#link"
+            >
+              Daftarkan startup kamu
+            </a>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- End Hero Cover -->
+
+    <!-- Section About -->
+    <section id="about">
+      <div class="bg-accent w-full flex justify-center">
+        <div
+          class="w-full flex md:flex-col lg:flex-row justify-center lg:items-stretch md:items-center lg:py-16 xl:py-24 md:py-10 max-w-7xl items-center gap-8 max-sm:flex-col max-sm:py-6 max-sm:mx-6 max-sm:gap-4"
+        >
+          <div>
+            <img
+              src="assets/images/videoabout.png"
+              alt="video"
+              class="rounded-lg picture"
+            />
+          </div>
+          <div class="max-w-xl flex flex-col gap-4 justify-between">
+            <h3 class="text-xl font-bold text-primary">
+              About Detikfinance Business Plan Competition 2023
+            </h3>
+            <p
+              class="text-sm max-sm:text-justify md:items-stretch md:text-justify lg:text-start"
+            >
+              Detikfinance kali ini akan memberikan ruang bagi startup untuk
+              networking dan memamerkan produk inovasinya di hadapan venture
+              capital dan angel investor. Acara ini juga akan menghadirkan para
+              pengembang teknologi dan pelaku bisnis untuk memberikan edukasi
+              dan inspirasi bagi masyarakat Indonesia dan teknofilia mengenai
+              perkembangan teknologi di Indonesia.
+            </p>
+            <div
+              class="flex gap-6 max-sm:justify-end max-sm:gap-3 md:justify-end lg:justify-start"
+            >
+              <a href="#share" class="text-secondary">Share</a>
+              <img src="assets/icons/twitter.svg" alt="twitter" />
+              <img src="assets/icons/whatsapp.svg" alt="whatsapp" />
+              <img src="assets/icons/facebook.svg" alt="facebook" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Section About -->
+
+    <!-- Section Mechanism -->
+    <section id="mechanism">
+      <div
+        class="2xl:h-screen w-full flex flex-col overflow-hidden relative -z-0 justify-center items-center max-sm:h-auto max-sm:flex-row md:h-auto"
+      >
+        <div class="absolute top-0 hidden max-sm:block w-full">
+          <img
+            src="assets/images/bgmechanismMobile.png"
+            alt="background"
+            class="min-h-fit"
+          />
+        </div>
+        <div class="absolute top-0 max-sm:hidden lg:block xl:hidden w-full">
+          <img
+            src="assets/images/bgmechanismMD.png"
+            alt="background"
+            class="min-h-fit"
+          />
+        </div>
+        <div class="absolute top-0 max-sm:hidden md:hidden lg:block">
+          <img src="assets/images/bgmechanism.png" alt="background" />
+        </div>
+        <div class="absolute bottom-0 max-md:hidden">
+          <img src="assets/images/accentmechanism.png" alt="background" />
+        </div>
+        <div class="absolute bottom-0 mix-blend-multiply max-md:hidden">
+          <img src="assets/images/accentmechanism2.png" alt="background" />
+        </div>
+
+        <!-- Mekanisme -->
+        <div
+          class="z-20 w-full lg:max-w-5xl md:max-w-3xl flex flex-col gap-5 max-sm:mx-0 max-sm:gap-7 md:my-10"
+        >
+          <p
+            class="text-4xl font-bold text-white 2xl:mt-5 md:mt-0 max-sm:mt-10 max-sm:text-3xl max-sm:mx-6 md:mx-10 lg:mx-10 xl:mx-0 xl:mt-16"
+          >
+            Mekanisme
+          </p>
+
+          <!-- Register -->
+          <div
+            class="w-full max-sm:w-auto md:w-auto lg:w-auto xl:w-full md:mx-10 lg:mx-10 xl:mx-0 flex flex-row bg-white rounded-2xl py-8 px-10 gap-10 items-start max-sm:px-6 max-sm:mx-6 max-sm:flex-col max-sm:gap-3 max-sm:py-5"
+          >
+            <img src="assets/icons/iregister.svg" alt="register" width="80" />
+            <div class="flex justify-between w-full flex-col gap-2">
+              <div
+                class="flex w-full justify-between max-sm:items-start max-sm:flex-col max-sm:gap-1"
+              >
+                <p class="text-2xl font-bold text-primary max-sm:text-lg">
+                  Registrasi
+                </p>
+                <p class="text-primary text-lg font-medium max-sm:text-sm">
+                  1 - 30 Januari 2023
+                </p>
+              </div>
+              <ol
+                class="list-decimal list-inside text-dark font-medium ml-5 max-sm:text-sm"
+              >
+                <li class="list-outside">
+                  Calon peserta diminta untuk mengisi formulir pendaftaran
+                  online yang berisi informasi pribadi, kontak, dan rincian tim
+                  pada <span class="text-primary">link berikut</span>
+                </li>
+                <li class="list-outside">
+                  Selain itu, peserta juga diharapkan mengunggah ringkasan
+                  rencana bisnis mereka yang mencakup visi, misi, strategi, dan
+                  analisis pasar
+                </li>
+              </ol>
+            </div>
+          </div>
+
+          <!-- Seleksi -->
+          <div
+            class="w-full max-sm:w-auto md:w-auto lg:w-auto xl:w-full md:mx-10 lg:mx-10 xl:mx-0 flex flex-row bg-white rounded-2xl py-8 px-10 gap-10 items-start max-sm:px-6 max-sm:mx-6 max-sm:flex-col max-sm:gap-3 max-sm:py-5"
+          >
+            <img src="assets/icons/iseleksi.svg" alt="register" width="80" />
+            <div class="flex justify-between w-full flex-col gap-2">
+              <div
+                class="flex w-full justify-between max-sm:items-start max-sm:flex-col"
+              >
+                <p class="text-2xl font-bold text-primary max-sm:text-lg">
+                  Seleksi Peserta
+                </p>
+                <p class="text-primary text-lg font-medium max-sm:text-sm">
+                  1 - 7 Februari 2023
+                </p>
+              </div>
+              <ol
+                class="list-decimal list-inside text-dark font-medium ml-5 max-sm:text-sm"
+              >
+                <li class="list-outside">
+                  Tim seleksi akan meninjau setiap pendaftaran dan mengevaluasi
+                  kualitas dan kelayakan bisnis plan yang diajukan
+                </li>
+                <li class="list-outside">
+                  Kriteria evaluasi dapat mencakup inovasi, potensi pertumbuhan,
+                  kelayakan keuangan, dan kejelasan presentasi
+                </li>
+                <li class="list-outside">
+                  Peserta yang memenuhi persyaratan seleksi akan dipilih sebagai
+                  finalis dan berhak melanjutkan ke tahap berikutnya
+                </li>
+              </ol>
+            </div>
+          </div>
+
+          <!-- Pengumuman -->
+          <div
+            class="w-full max-sm:w-auto md:w-auto lg:w-auto xl:w-full md:mx-10 lg:mx-10 xl:mx-0 flex flex-row bg-white rounded-2xl py-8 px-10 gap-10 items-start max-sm:px-6 max-sm:mx-6 max-sm:flex-col max-sm:gap-3 max-sm:py-5 max-sm:mb-12"
+          >
+            <img src="assets/icons/ipengumuman.svg" alt="register" width="80" />
+            <div class="flex justify-between w-full flex-col gap-2">
+              <div
+                class="flex w-full justify-between max-sm:items-start max-sm:flex-col"
+              >
+                <p class="text-2xl font-bold text-primary max-sm:text-lg">
+                  Pengumuman Peserta Terpilih
+                </p>
+                <p class="text-primary text-lg font-medium max-sm:text-sm">
+                  8 Februari 2023
+                </p>
+              </div>
+              <ol
+                class="list-decimal list-inside text-dark font-medium ml-5 max-sm:text-sm"
+              >
+                <li class="list-outside">
+                  Pengumuman finalis akan dilakukan melalui email
+                </li>
+                <li class="list-outside">
+                  Finalis akan diinformasikan tentang jadwal presentasi dan
+                  persiapan yang diperlukan
+                </li>
+                <li class="list-outside">
+                  Pada acara pengumuman pemenang, setiap finalis akan
+                  mempresentasikan rencana bisnis mereka di hadapan panel juri
+                </li>
+                <li class="list-outside">
+                  Setelah presentasi, panel juri akan melakukan evaluasi dan
+                  mengumumkan pemenang kompetisi business plan
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Section Mechanism -->
+
+    <!-- Section Media Partner -->
+    <section>
+      <div
+        class="flex flex-col justify-center items-center bg-accent pt-14 w-full overflow-hidden gap-10 relative max-sm:py-10 max-sm:gap-5"
+      >
+        <p
+          class="w-full max-w-2xl text-primary font-bold text-center text-lg max-sm:text-base"
+        >
+          Dapatkan Kesempatan Dilirik oleh Venture Capital / Angel Investor
+          Serta Menjadi Narasumber di Detikfinance
+        </p>
+
+        <div class="slider">
+          <div class="slide-track">
+            <div class="slide">
+              <img src="assets/images/mp.png" alt="mp" class="mp" />
+            </div>
+            <div class="slide">
+              <img src="assets/images/mp2.png" alt="mp" class="mp" />
+            </div>
+            <div class="slide">
+              <img src="assets/images/mp3.png" alt="mp" class="mp" />
+            </div>
+            <div class="slide">
+              <img src="assets/images/mp4.png" alt="mp" class="mp" />
+            </div>
+            <div class="slide">
+              <img src="assets/images/mp5.png" alt="mp" class="mp" />
+            </div>
+            <div class="slide">
+              <img src="assets/images/mp6.png" alt="mp" class="mp" />
+            </div>
+            <div class="slide">
+              <img src="assets/images/mp7.png" alt="mp" class="mp" />
+            </div>
+            <div class="slide">
+              <img src="assets/images/mp8.png" alt="mp" class="mp" />
+            </div>
+          </div>
+        </div>
+
+        <button
+          class="bg-secondary rounded-lg text-white px-4 py-3 font-medium hover:bg-primary duration-300 mt-5 max-sm:mt-2"
+        >
+          Daftarkan startup kamu
+        </button>
+      </div>
+    </section>
+    <!-- End Section Media Partner -->
+
+    <!-- Section Latest Update -->
+    <section id="latestupdate">
+      <div
+        class="w-full 2xl:h-screen bg-accent flex flex-col justify-center items-center max-sm:h-auto max-sm:pb-8 md:h-auto lg:px-32 xl:px-28 md:px-12 md:pb-10 2xl:pb-0"
+      >
+        <div
+          class="max-w-screen-2xl w-full flex flex-col justify-between gap-5 mt-8 max-sm:items-start 2xl:mt-8 xl:mt-24"
+        >
+          <div
+            class="uppercase 2xl:text-3xl text-primary font-bold max-sm:mx-6 max-sm:text-2xl md:text-2xl"
+          >
+            Latest Update
+          </div>
+          <div
+            class="w-full flex flex-wrap justify-between gap-8 max-sm:justify-center max-sm:mx-6 max-sm:w-auto"
+          >
+            <div class="2xl:max-w-md md:max-w-xs space-y-2">
+              <img src="assets/images/update.png" alt="update" />
+              <p class="text-dark font-bold">
+                Alpha JWC Ventures Suntikkan Dana Segar kepada OnlinePajak dan
+                Stoqo
+              </p>
+              <p class="text-grey text-sm">1 hari yang lalu</p>
+            </div>
+            <div class="2xl:max-w-md md:max-w-xs space-y-2">
+              <img src="assets/images/update2.png" alt="update" />
+              <p class="text-dark font-bold">
+                Startup Lifepack Rampungkan Pendanaan Seri A yang Dipimpin
+                Golden Gate Ventures
+              </p>
+              <p class="text-grey text-sm">1 hari yang lalu</p>
+            </div>
+            <div class="2xl:max-w-md md:max-w-xs space-y-2">
+              <img src="assets/images/update3.png" alt="update" />
+              <p class="text-dark font-bold">
+                Angel Investor Adalah? Berikut Jenis, Contoh dan Cara
+                Mendapatkannya
+              </p>
+              <p class="text-grey text-sm">1 hari yang lalu</p>
+            </div>
+            <div class="2xl:max-w-md md:max-w-xs space-y-2">
+              <img src="assets/images/update4.png" alt="update" />
+              <p class="text-dark font-bold">
+                Crowe Indonesia Gelar Diskusi terkait Valuasi Startup & Laporan
+                ESG
+              </p>
+              <p class="text-grey text-sm">1 hari yang lalu</p>
+            </div>
+            <div class="2xl:max-w-md md:max-w-xs space-y-2">
+              <img src="assets/images/update5.png" alt="update" />
+              <p class="text-dark font-bold">
+                Startup Fresh Factory Bangun Ratusan Gudang Dingin di 103 Kota
+              </p>
+              <p class="text-grey text-sm">1 hari yang lalu</p>
+            </div>
+            <div class="2xl:max-w-md md:max-w-xs space-y-2">
+              <img src="assets/images/update6.png" alt="update" />
+              <p class="text-dark font-bold">
+                Startup Pertanian RI Dapat Pendanaan Awal, Totalnya Rp 90 M
+              </p>
+              <p class="text-grey text-sm">1 hari yang lalu</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Section Latest Update -->
+
+    <!-- Footer -->
+    <footer>
+      <div
+        class="bg-primary w-full flex justify-around flex-col px-14 py-8 text-white gap-8 max-sm:px-6"
+      >
+        <img src="assets/images/logo.png" width="250" />
+        <div class="flex flex-col gap-5">
+          <div
+            class="lg:flex-row md:flex-col flex justify-between items-end max-sm:text-xs max-sm:flex-col max-sm:items-end max-sm:gap-5"
+          >
+            <p class="max-w-4xl max-sm:text-justify md:text-sm 2xl:text-base">
+              Detikfinance memberikan ruang kepada para startup di Indonesia
+              untuk menunjukkan, serta mempromosikan brand mereka untuk
+              mendapatkan perhatian dari venture capital atau angel investor
+            </p>
+            <div class="flex gap-10 max-sm:gap-6 md:gap-6 lg:gap-10">
+              <img src="assets/icons/ftwitter.svg" alt="fFb" />
+              <img src="assets/icons/fig.svg" alt="fFb" />
+              <img src="assets/icons/ffb.svg" alt="fFb" />
+            </div>
+          </div>
+          <div class="w-full h-[1px] rounded-full bg-white"></div>
+          <p class="font-light text-sm">© 2023 Detikcom. All rights reserved</p>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Script -->
+    <script src="js/navbar.js"></script>
+    <script src="tailwind.config.js"></script>
+
+    <!-- Icon -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

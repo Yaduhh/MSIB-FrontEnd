@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="shortcut icon" href="../public/favicon.ico" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" type="text/css" href="../global.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="px-8 lg:px-14 py-5 bg-primary shadow-sm md:flex md:items-center md:justify-between fixed w-full z-50"
+    >
+      <div class="flex justify-between items-center">
+        <a href="../index.html" class="text-2xl cursor-pointer z-50">
+          <img class="h-10 inline" src="../assets/images/logo.png" alt="logo" />
+        </a>
+
+        <span class="text-3xl cursor-pointer mx-2 md:hidden block text-white">
+          <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+        </span>
+      </div>
+
+      <ul
+        class="md:flex md:items-center lg:gap-8 text-white font-medium xl:text-lg -z-0 md:z-auto md:static absolute bg-primary w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-200px] transition-all ease-in duration-300"
+      >
+        <li class="mx-3 my-0 md:my-0">
+          <a
+            href="../index.html"
+            class="hover:text-accent duration-200 nav-link"
+            data-target="about"
+            >About</a
+          >
+        </li>
+        <li class="mx-3 my-3 md:my-0">
+          <a
+            href="../index.html"
+            class="hover:text-accent duration-200 nav-link"
+            data-target="mechanism"
+            >Mechanism</a
+          >
+        </li>
+        <li class="mx-3 my-3 md:my-0">
+          <a
+            href="../index.html"
+            class="hover:text-accent duration-200 nav-link"
+            data-target="latestupdate"
+            >Latest Update</a
+          >
+        </li>
+        <button
+          class="bg-white text-primary duration-300 px-6 py-2 rounded-full hover:bg-secondary hover:text-white mx-3"
+        >
+          <a href="register.html"> Register </a>
+        </button>
+      </ul>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Cover register -->
+    <section>
+      <div class="w-full bg-accent relative -z-0">
+        <div class="w-full absolute top-0 -z-20 overflow-hidden">
+          <img
+            src="../assets/images/bgregister.png"
+            alt="background"
+            class="max-sm:hidden max-xl:hidden"
+          />
+          <img
+            src="../assets/images/bgregisterMD.png"
+            alt="background"
+            class="xl:hidden flex max-sm:hidden md:mt-16 lg:mt-0"
+          />
+          <img
+            src="../assets/images/bgmechanismMobile.png"
+            alt="background"
+            class="max-sm:block md:hidden"
+          />
+        </div>
+
+        <div class="w-full flex justify-center flex-col items-center h-auto">
+          <p
+            class="text-5xl max-sm:text-3xl font-bold text-white mt-48 max-sm:mt-28"
+          >
+            Registrasi
+          </p>
+          <div
+            class="w-full max-w-4xl max-sm:w-auto max-sm:mx-6 flex flex-col bg-white md:w-auto md:mx-10 px-8 max-sm:px-6 max-sm:py-6 py-10 rounded-2xl gap-4 max-sm:gap-1 mt-10 max-sm:mt-5 mb-16"
+          >
+            <input
+              class="max-sm:text-sm appearance-none flex placeholder-form w-full bg-gray-100 leading-tight rounded-xl py-4 px-5 max-sm:py-3 mb-3 focus:outline outline-primary focus:bg-white"
+              id="name"
+              type="text"
+              placeholder="Nama Perusahaan *"
+            />
+            <input
+              class="max-sm:text-sm appearance-none flex placeholder-form w-full bg-gray-100 leading-tight rounded-xl py-4 px-5 max-sm:py-3 mb-3 focus:outline outline-primary focus:bg-white"
+              id="email"
+              type="email"
+              placeholder="Email *"
+            />
+            <div class="mb-2">
+              <input
+                class="max-sm:text-sm appearance-none flex placeholder-form w-full bg-gray-100 leading-tight rounded-xl py-4 px-5 max-sm:py-3 focus:outline outline-primary focus:bg-white"
+                id="number"
+                type="number"
+                placeholder="Nomor Telepon *"
+              />
+              <label class="text-grey text-sm">Isi hanya angka</label>
+            </div>
+            <textarea
+              class="max-sm:text-sm appearance-none flex placeholder-form w-full h-44 bg-gray-100 leading-tight rounded-xl py-4 px-5 max-sm:py-3 mb-3 focus:outline outline-primary focus:bg-white"
+              placeholder="Tentang Perusahaan (Max. 200 character)*"
+            ></textarea>
+
+            <div
+              class="w-full flex gap-8 max-sm:gap-2 items-center max-sm:flex-col"
+            >
+              <form class="w-full max-w-xs" enctype="multipart/form-data">
+                <div class="flex flex-col">
+                  <label
+                    for="image"
+                    class="bg-gray-100 flex justify-end flex-col lg:gap-12 md:gap-4 max-sm:gap-2 items-center cursor-pointer lg:h-60 max-sm:h-28 md:h-40 rounded-xl"
+                  >
+                    <div class="bg-[#1B85E8] p-1 rounded-full">
+                      <svg
+                        class="w-16 h-16 max-sm:h-10 max-sm:w-10 text-white"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                        ></path>
+                      </svg>
+                    </div>
+                    <p class="mb-4 max-sm:text-sm">
+                      Upload file logo<span class="text-red-600"> *</span>
+                    </p>
+                  </label>
+                  <input type="file" id="image" name="image" class="hidden" />
+                </div>
+              </form>
+
+              <div>
+                <ol
+                  class="list-decimal list-inside max-sm:list-outside max-sm:text-sm max-sm:mx-5"
+                >
+                  <li>Format file: .png, .jpg, .jpeg</li>
+                  <li>Maksimal ukuran file 200KB</li>
+                  <li>Hindari penggunaan logo berwarna putih</li>
+                  <li>Minimal lebar 300px</li>
+                  <!-- ... -->
+                </ol>
+              </div>
+            </div>
+
+            <!-- Form Upload Profil -->
+            <div class="w-full">
+              <form class="w-full" enctype="multipart/form-data">
+                <div class="flex flex-wrap -mx-3 mb-6">
+                  <div class="w-full px-3">
+                    <div class="relative">
+                      <input
+                        readonly
+                        class="flex placeholder-form w-full focus:outline-none h-14 max-sm:h-12 bg-gray-100 leading-tight rounded-xl px-5 absolute top-3 right-0 max-sm:text-sm"
+                        type="email"
+                        placeholder="Profil Perusahaan atau Deck (opsional)"
+                      />
+                      <label
+                        for="image"
+                        class="bg-primary hover:bg-secondary text-white font-bold h-14 max-sm:h-12 flex items-center px-16 max-sm:px-2 max-sm:text-sm rounded-xl absolute top-3 right-0 cursor-pointer"
+                      >
+                        Upload File
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </form>
+              <span
+                id="file-name"
+                class="block text-grey mt-20 text-sm max-sm:mt-16"
+                >Format file .pdf , maksimal size 20mb</span
+              >
+            </div>
+            <!-- End Form Upload Profil -->
+
+            <!-- Link Website -->
+            <div class="mt-1 max-sm:mt-3">
+              <input
+                class="appearance-none max-sm:text-sm flex placeholder-form w-full bg-gray-100 leading-tight rounded-xl py-4 px-5 max-sm:py-3 focus:outline outline-primary focus:bg-white"
+                id="email"
+                type="email"
+                placeholder="Link Website *"
+              />
+              <span class="text-grey text-sm"
+                >Website, Sosial Media, dll. Sertakan protokol URL (https://
+                atau http://).</span
+              >
+            </div>
+
+            <!-- Centang -->
+            <div
+              class="flex items-center max-sm:items-start md:items-start lg:items-center max-sm:mt-7"
+            >
+              <input
+                type="checkbox"
+                id="check"
+                class="form-checkbox h-5 w-5 rounded-xl text-grey"
+              />
+              <label for="check" class="ml-2 text-form max-sm:text-sm"
+                >Dengan menekan tombol "Daftar", Saya menyetujui syarat dan
+                ketentuan yang berlaku.</label
+              >
+            </div>
+
+            <div class="w-full flex justify-center mt-5 max-sm:mt-10">
+              <button
+                class="bg-primary w-full max-w-xs py-4 max-sm:py-3 rounded-xl text-white hover:bg-secondary duration-300 font-bold"
+              >
+                Register
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Cover register -->
+
+    <!-- Footer -->
+    <footer>
+      <div
+        class="bg-primary w-full flex justify-around flex-col px-14 py-8 text-white gap-8 max-sm:px-6 z-20 relative"
+      >
+        <img src="../assets/images/logo.png" width="250" />
+        <div class="flex flex-col gap-5">
+          <div
+            class="lg:flex-row md:flex-col flex justify-between items-end max-sm:text-xs max-sm:flex-col max-sm:items-end max-sm:gap-5"
+          >
+            <p class="max-w-4xl max-sm:text-justify md:text-sm 2xl:text-base">
+              Detikfinance memberikan ruang kepada para startup di Indonesia
+              untuk menunjukkan, serta mempromosikan brand mereka untuk
+              mendapatkan perhatian dari venture capital atau angel investor
+            </p>
+            <div class="flex gap-10 max-sm:gap-6 md:gap-6 lg:gap-10">
+              <img src="../assets/icons/ftwitter.svg" alt="fFb" />
+              <img src="../assets/icons/fig.svg" alt="fFb" />
+              <img src="../assets/icons/ffb.svg" alt="fFb" />
+            </div>
+          </div>
+          <div class="w-full h-[1px] rounded-full bg-white"></div>
+          <p class="font-light text-sm">© 2023 Detikcom. All rights reserved</p>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="../js/filename.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="../tailwind.config.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

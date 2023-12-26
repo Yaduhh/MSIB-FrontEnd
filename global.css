@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@keyframes scroll{
+    0%{
+        transform: translate(0);
+    }
+    100%{
+        transform: translate(calc(-250px * 7));
+    }
+}
+
+.slider{
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.slider .slide-track{
+    animation: scroll 50s linear infinite;
+    display: flex;
+    margin: 0px;
+    width: calc(250px * 14);
+}
+
+.slider .slide{
+    height: auto;
+    width: 400px;
+}
+
+.mp{
+    width: 350px;
+}
+
+/* CSS */
+input::placeholder::after {
+    content: " *";
+    color: red;
+}
+
+/* Navbar */
+
+@media (min-width: 640px) {
+    .mp {
+        width: 300px;
+    }
+    .slider .slide-track {
+        animation: scroll 50s linear infinite;
+        display: flex;
+        margin: 0px;
+        width: calc(200px * 14);
+    }
+    .picture{
+        width: 400px;
+    }
+    
+}
+
+@media (min-width: 768px) {
+    .picture {
+            width: 580px;
+        }
+}
+
+@media (min-width: 1024px) {
+    .picture {
+            width: 350px;
+        }
+
+}
+@media (min-width: 1280px) {
+    .picture {
+            width: 400px;
+        }
+}
+@media (min-width: 1536px) {
+    .picture {
+        width: 400px;
+    }
+
+}
+
